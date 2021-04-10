@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.Calculator_dup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="0dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    tools:context=".MainActivity"
+    tools:ignore="NewApi"
+    tools:targetApi="lollipop">
+
+
+    <TableLayout
+        android:layout_width="404dp"
+        android:layout_height="459dp"
+
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="?attr/colorSecondary"
+                android:drawablePadding="0dp"
+                android:fontFamily="sans-serif-light"
+                android:onClick="clearB"
+                android:text="C"
+
+                />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+
+                android:fontFamily="sans-serif-light"
+                android:onClick="cleareverythingB"
+                android:text="CE"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:background="@drawable/buttonbg"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+
+                android:fontFamily="sans-serif-light"
+                android:onClick="bracketsB"
+                android:text="( )"
+                android:textSize="30sp"
+                 />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                style="@style/style.button"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+
+                android:fontFamily="sans-serif-light"
+                android:onClick="divideB"
+                android:text="÷"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="76dp">
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/style.button"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="sevenB"
+                android:text="7"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="eightB"
+                android:text="8"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="nineB"
+                android:text="9"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="multiplyB"
+                android:text="×"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button11"
+                style="@style/style.button"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="fourB"
+                android:text="4"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="fiveB"
+                android:text="5"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button13"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="sixB"
+                android:text="6"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button12"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="minusB"
+                android:text="-"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button16"
+                style="@style/style.button"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="oneB"
+                android:text="1"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button15"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="twoB"
+                android:text="2"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button14"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="threeB"
+                android:text="3"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="plusB"
+                android:text="+"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <Button
+                android:id="@+id/button18"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="plusminusB"
+                android:text="+/-"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button19"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="zeroB"
+                android:text="0"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button20"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="dotB"
+                android:text="."
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button17"
+                style="@style/style.button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+
+                android:onClick="equalsB"
+                android:text="="
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="339dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="60dp"
+        android:autofillHints="false"
+
+        android:cursorVisible="true"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="end"
+        android:inputType="none"
+        android:textAlignment="textEnd"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
