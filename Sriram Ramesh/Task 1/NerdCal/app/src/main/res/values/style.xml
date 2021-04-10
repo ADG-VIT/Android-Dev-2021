@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style.button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@color/SecondaryColor</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:color">@color/SecondaryColor</item>
+
+    </style>
+
+
+
+</resources>
